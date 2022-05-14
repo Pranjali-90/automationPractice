@@ -1,0 +1,123 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 4096 bytes for card table last card
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3371), pid=12456, tid=0x0000000000003454
+#
+# JRE version:  (8.0_202-b08) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.202-b08 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000219e800):  JavaThread "Unknown thread" [_thread_in_vm, id=13396, stack(0x00000000022a0000,0x00000000023a0000)]
+
+Stack: [0x00000000022a0000,0x00000000023a0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000219e800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=13396, stack(0x00000000022a0000,0x00000000023a0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000000e1c00000, size: 484 MB, Compressed Oops mode: Non-zero based:0x00000000e1bff000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6fede0000 - 0x00007ff6fee17000 	C:\Program Files\Java\jdk1.8.0_202\bin\javaw.exe
+0x00007ffb58690000 - 0x00007ffb58885000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffb568e0000 - 0x00007ffb5699e000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffb55f90000 - 0x00007ffb56258000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffb56830000 - 0x00007ffb568de000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffb57420000 - 0x00007ffb574be000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffb58380000 - 0x00007ffb5841c000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffb56e40000 - 0x00007ffb56f65000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffb56f70000 - 0x00007ffb57110000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffb56300000 - 0x00007ffb56322000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffb574c0000 - 0x00007ffb574eb000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffb55e50000 - 0x00007ffb55f5d000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffb56260000 - 0x00007ffb562fd000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffb56330000 - 0x00007ffb56430000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffb4a660000 - 0x00007ffb4a8fa000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffb58610000 - 0x00007ffb58640000 	C:\WINDOWS\System32\IMM32.DLL
+0x000000005d900000 - 0x000000005d9d2000 	C:\Program Files\Java\jdk1.8.0_202\jre\bin\msvcr100.dll
+0x000000005d9e0000 - 0x000000005e285000 	C:\Program Files\Java\jdk1.8.0_202\jre\bin\server\jvm.dll
+0x00007ffb566e0000 - 0x00007ffb566e8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffb4ef30000 - 0x00007ffb4ef39000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffb585a0000 - 0x00007ffb5860b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffb40ea0000 - 0x00007ffb40ec7000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffb44da0000 - 0x00007ffb44daa000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffb48a90000 - 0x00007ffb48a9f000 	C:\Program Files\Java\jdk1.8.0_202\jre\bin\verify.dll
+0x00007ffb26350000 - 0x00007ffb26379000 	C:\Program Files\Java\jdk1.8.0_202\jre\bin\java.dll
+0x00007ffb49e20000 - 0x00007ffb49e55000 	C:\Program Files\Java\jdk1.8.0_202\jre\bin\jdwp.dll
+0x00007ffb4f1a0000 - 0x00007ffb4f1a8000 	C:\Program Files\Java\jdk1.8.0_202\jre\bin\npt.dll
+0x00007ffb49df0000 - 0x00007ffb49e13000 	C:\Program Files\Java\jdk1.8.0_202\jre\bin\instrument.dll
+0x00007ffb2f390000 - 0x00007ffb2f3a6000 	C:\Program Files\Java\jdk1.8.0_202\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:51090 -javaagent:D:\Acceleartion\software\eclipse-jee-photon-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\418\0\.cp\lib\javaagent-shaded.jar -Dfile.encoding=Cp1252 
+java_command: Assignment.palindrome
+java_class_path (initial): C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;D:\Acceleartion\workspace\BasicJava\bin;D:\Acceleartion\software\eclipse-jee-photon-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\418\0\.cp\lib\javaagent-shaded.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files\Java\jdk1.8.0_202\jre\bin;C:/Program Files/Java/jdk1.8.0_202/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_202/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_202/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Users\Asus\AppData\Local\Microsoft\WindowsApps;;D:\Acceleartion\software\eclipse-jee-photon-R-win32-x86_64\eclipse;
+USERNAME=Asus
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 19041 (10.0.19041.1503)
+
+CPU:total 2 (initial active 2) (2 cores per cpu, 1 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, clmul, erms, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 1980280k(408452k free), swap 8009592k(223904k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.202-b08) for windows-amd64 JRE (1.8.0_202-b08), built on Dec 15 2018 19:54:30 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sat Mar 12 21:39:16 2022
+timezone: India Standard Time
+elapsed time: 3 seconds (0d 0h 0m 3s)
+
